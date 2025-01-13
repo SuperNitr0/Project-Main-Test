@@ -41,6 +41,7 @@ jobs:
 
     - name: Build and push Docker images
       run: |
+        cd app/
         docker-compose build
         docker-compose push
 
